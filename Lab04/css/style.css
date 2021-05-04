@@ -1,0 +1,10 @@
+.row{ margin: 5px auto; }
+
+.c1, .c2, .c3, .c4, .c5, .c6 { height: 100px; }
+
+.c1 { background-color: #934D92; }
+.c2 { background-color: #D0D0D0; }
+.c3 { background-color: #29A9E0; }
+.c4 { background-color: #F69423; }
+.c5 { background-color: #D44040; }
+.c6 { background-color: #ACD77C; }
