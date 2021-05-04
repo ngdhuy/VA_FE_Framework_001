@@ -1,0 +1,17 @@
+$light-red: #cc3366;
+$font-color: #fff;
+
+h1 { 
+    color: $light-red;
+}
+
+div {
+    color: $font-color;
+    background-color: $light-red;
+}
+
+ul {
+    li {
+        color: $light-red;
+    }
+}

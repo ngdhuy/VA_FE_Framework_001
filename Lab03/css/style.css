@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  height: 100px;
+  background-color: #b2d6ff;
+}
+
+.container {
+  overflow: hidden;
+  background-color: #eaedf0;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  float: left;
+  height: 300px;
+  width: 200px;
+  background-color: #f09a9d;
+}
+
+.content {
+  float: left;
+  height: 500px;
+  width: 650px;
+  background-color: #f5cf8e;
+}
+
+.footer {
+  background-color: #d6e9fe;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
+  background-color: #b2d6ff;
+}
+
+/*# sourceMappingURL=style.css.map */

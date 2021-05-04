@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo 03</h1>
+    <div>
+        From: <select class="fromCur"></select>
+        To: <select class="toCur"></select>
+        <button>Convert currency</button>
+    </div>
+    <div class="result"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let apiURL = "https://free.currconv.com/api/v7/currencies?apiKey=do-not-use-this-key";
+            
+            $.get(apiURL, function(data, status){
+                if(status == 200)
+                {
+                    var curID = Object.keys(data.results);
+                    curID.forEach(function(item){
+                        $(".fromCur").append(`<option value='${item}'>${item}</option>`);
+                        $(".toCur").append(`<option value='${item}'>${item}</option>`);
+                    });
+                }
+            }).done(function(){
+                console.log('DONE');
+            }).fail(function(error){
+                console.log(error.status + " - " + error.statusText);
+            });
+
+            $('button').click(function(){
+                var from = $(".fromCur").val();
+                var to = $(".toCur").val();
+
+                let apiConvert = `https://free.currconv.com/api/v7/convert?q=${from}_${to}&compact=ultra&apiKey=do-not-use-this-key`;
+                
+                $.get(apiConvert, function(data, status){
+                    $(".result").text(data[Object.keys(data)[0]]);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

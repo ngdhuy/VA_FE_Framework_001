@@ -1,0 +1,12 @@
+@use 'base';
+
+@mixin set-box($size) {
+    width: $size;
+    height: $size * 2;
+}
+
+div {
+    @include set-box(100px);
+    background-color: base.$light-red;
+    color: base.$font-color;
+}

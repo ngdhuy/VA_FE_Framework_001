@@ -1,0 +1,54 @@
+$menu-color: #b2d6ff;
+$sidebar-color: #f09a9d;
+$content-color: #f5cf8e;
+$footer-color: #d6e9fe;
+$container-color: #eaedf0;
+$column-color: #b2d6ff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 100px;
+    background-color: $menu-color;
+}
+
+.container {
+    overflow: hidden;
+    background-color: $container-color;
+}
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    float: left;
+    height: 300px;
+    width: 200px;
+    background-color: $sidebar-color;
+}
+
+.content {
+    float: left;
+    height: 500px;
+    width: 650px;
+    background-color: $content-color;
+}
+
+.footer {
+    background-color: $footer-color;
+    overflow: hidden;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    height: 160px;
+    background-color: $column-color;
+}

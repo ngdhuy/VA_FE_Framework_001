@@ -1,0 +1,6 @@
+@use 'base';
+
+nav {
+    background-color: base.$light-red;
+    color: base.$font-color;
+}

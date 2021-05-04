@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/img/fas.png" />
+    
+</head>
+<body>
+    <h1>Demo 02</h1>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li class='red'>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>
+                <div>DIV element insite LI</div>
+            </li>
+        </ul>
+    </div>
+    <div id="idBlue">Blue item</div>
+    <div class='red'>This is Class RED</div>
+    <section class='red'>This is Footer</section>
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            $('li').css('border', '1px solid #cc3366');
+            $('.red').css('background-color', '#6633cc');
+            $('#idBlue').css('border', '1px solid #66cc33');
+            $('section.red').css('background-color', '#3366cc');
+            $('.red, #idBlue').css('margin', '5px');
+            $('li div').css('background-color', '#33cc66');
+
+            $('li').odd().css('background-color', '#88cc99');
+        });
+    </script>
+</body>
+</html>

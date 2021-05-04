@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo 02</h1>
+    <button>Click me</button>
+    
+    <div></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('button').click(function(){
+                $("div").load("data.json", function(res, status, xhr){
+                    if(status === "success")
+                        console.log("OK");
+                    else
+                    {
+                        if(status === "error")
+                            console.log("Error: " + xhr.status + ' - ' + xhr.statusText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

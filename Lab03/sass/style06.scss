@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+}
+
+$size : 100px;
+
+div[role='main'] {
+    width: $size * 3;
+    height: $size * 2;
+    background-color: #cc3366;
+    margin: 10px;
+}
+
+div[role='sub'] {
+    width: $size * 2;
+    height: $size * 3;
+    border: 1px solid #66cc33;
+}
