@@ -83,3 +83,82 @@ header a {
     font-size: 12pt;
     font-weight: 400;
 }
+
+.section-download {
+    height: 600px;
+    background-image: url('../img/bg-callout.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-download .mb-5 {
+    font-weight: 700;
+    font-size: 36pt;
+}
+
+.section-download a {
+    color: #fff;
+    background-color: #1d809f;
+    border: 1px solid #1d809f;
+}
+
+.section-download a:hover {
+    color: #1d809f;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.section-portfolio {
+    background-color: #fff;
+    height: 900px;
+}
+
+.section-portfolio .mb-1 {
+    color: #ecb807;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-portfolio .mb-5 {
+    font-weight: 700;
+    font-size: 36pt;
+}
+
+.item {
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item:hover img {
+    width: 85%;
+    height: 85%;
+    opacity: 0.5;
+    transition: width .3s, height 0.3s, opacity 0.3s;
+}
+
+.section-map {
+    height: 450px;
+    padding: 0px !important;
+}
+
+.section-info {
+    height: 300px;
+}
+
+.social-ico {
+    background-color: #1d809f;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    line-height: 100px;
+}
