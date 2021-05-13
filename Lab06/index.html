@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 3D Car</title>
+</head>
+<body>
+    <img src='./img/001.jpg' />
+
+    <script> 
+        arr_img = [];
+        cur_id = 0;
+        
+        function init() {
+            for(i = 1; i < 145; i++) {
+                temp = i;
+                if(i < 10)
+                    temp = "00" + temp;
+                else 
+                    if (i < 100)
+                        temp = "0" + temp;
+                arr_img.push(`./img/${temp}.jpg`);
+            }
+        }
+
+        var flag = true;
+        function next() {
+            if (flag)
+                cur_id++;
+            else
+                cur_id--;
+
+            if (cur_id >= 143)
+                flag = false;
+            if (cur_id < 1)
+                flag = true;
+
+            console.log(cur_id);
+            document.querySelector('img').src = arr_img[cur_id];
+        }
+
+        init();
+        setInterval(next, 40);
+    </script>
+</body>
+</html>
